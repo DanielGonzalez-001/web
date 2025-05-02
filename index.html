@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <html>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewpoint" cotaithewidth, initial-scale="1.0">
+        <link rel="icon" href="Img/Cherry%20logo%201.ico">
+    </html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bitacora de Daniel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+            h1{
+                color: white;
+                font-size: 35px; /*Tamaño de la letra*/
+                font-family: "Teko", serif;
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding-top: -10px;
+                padding-bottom: -10px;
+            }
+            h6{
+                color: rosybrown;
+                text-align: center;
+                margin: 0px;
+                padding-bottom: 40px;
+                padding-top: 50px;
+                font-size: 25px;
+            }
+            #Imagen1{
+                width: 200px;
+                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 1px 1px 41px 8px rgba(0,0,0,0.6);
+            }
+            #Imagen2{
+                width: 700px;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 1px 1px 41px 8px rgba(0,0,0,0.6);
+            }
+            #Texto1{
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+            .Titulo1{
+                background-color: rosybrown;
+                margin-top: 0%;
+                position: sticky;
+                overflow: hidden;
+                top: 0;
+            }
+            .contenido{
+                background-color: cornsilk;
+                margin-top: -100px;
+            }
+            #video{
+                margin-left: 540px;
+                box-shadow: 1px 1px 41px 8px rgba(0,0,0,0.6);
+            }
+            #mapa{
+                margin-left: 540px;
+                box-shadow: 1px 1px 41px 8px rgba(0,0,0,0.6);
+            }
+            p.pagina{
+                text-align: center;
+                color: white;
+                background-color: rosybrown;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 25px;
+            }
+            li{
+                margin-left: 720px;
+                font-size: 20px;
+                color: rosybrown;
+            }
+            .hiper{
+                color: rosybrown;
+                text-align: center;
+                font-size: 40px;
+                padding-bottom: 20px;
+            }
+            a{
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+            .txtuno{
+            color: black;
+            font-size: 20px;
+
+        }
+            .cuadrado{
+            width: 600px;
+            height: 425px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding: 10px;
+            border: 33px solid #bc8f8f;
+            box-shadow: 18px 24px 63px 18px rgba(0,0,0,0.75);
+            background-color: cornsilk;
+            border-radius: 35px;
+            background: linear-gradient(0deg, #bc8f8f 0%, #FFF8DC 100%);
+            margin-top: 80px;
+        }
+            .lista{
+            text-align: center;
+            list-style: none;
+        }
+            .footer{
+            margin-top: 100px;
+            }
+            body{
+            background-color: cornsilk;
+            }
+
+            .forma{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            }
+            #tab{
+            text-align: center;
+            margin-left: 845px;
+            margin-right: auto;
+            color: rosybrown;
+            }
+            
+            .mover{
+                background-color: rosybrown;
+                padding: 10px;
+            }
+            .caja{
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: rosybrown;
+                margin: 10px;
+            }
+            .boton{
+                background-color: rosybrown;
+                color: cornsilk;
+                padding: 10px;
+                transition: background-color 0.3s;
+                /*display: block;*/
+            }
+            .button:hover {
+                background-color: red; /*cambia el color al pasar el mouse*/
+            }
+
+            .anim{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            animation: mover 2s infinite;/*Nombre de la animación, tiempo, infinite*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+            .anim2{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            animation: rotar 2s infinite;/*Nombre de la animación, tiempo, infinite*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }   
+            .anim3{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            animation: escala 2s infinite;/*Nombre de la animación, tiempo, infinite*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+ 
+    50% {
+        transform: translateX(50px);
+    }
+ 
+    100% {
+        transform: translateX(0);
+    }
+}
+ 
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+        transform: rotate(360deg);
+    }
+}
+ 
+@keyframes escala {
+    0% {
+        transform: scale(1);/*Tamaño original*/
+    }
+ 
+    50% {
+        transform: scale(2);/*Tamaño grande*/
+    }
+ 
+    100% {
+ 
+        transform: scale(1);
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="Titulo1">
+        <h1>Bitacora de Daniel <br> Esto es un titulo grande</h1>
+        </div>
+        <div class="contenido">
+        <h6>Esto es un titulo muy pequeño, hay 6 tipos de h1..h6</h6>
+        <p class="pagina">Esto es una no lista ordenada</p>
+        <ul>
+            <li>Elemento no ordenado</li>
+            <li>Elemento no ordenado</li>
+            <li>Elemento no ordenado</li>
+        </ul>
+        <p class="pagina">Esto es una lista ordenada, para elegir el numero con el que se empieza la lista, agregar la palabra start y el numero con el que se inicia.</p>
+        <ol>
+            <li>Elemento ordenado</li>
+            <li>Elemento ordenado</li>
+            <li>Elemento ordenado</li>
+        </ol>
+        <p class="pagina">Imagen local</p>
+        <img id="Imagen1" src="Img/Img1.jpg">
+        <p class="pagina">Imagen de Internet</p>
+        <img id="Imagen2" src="https://i.ytimg.com/vi/9hhTX0YedaY/maxresdefault.jpg">
+        <div class="hiper">
+        <a  id class="hiper" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-qG1FH28wImYLmO-sSRTbfE4dnmRrW6k8cQ&s"><br>Boton para hypertexto</a></div>
+        <p class="pagina">Mapa de google maps con etiqueta IFRAME</p> <!--Los Iframes son codigos que podemos usar en nuestras paginas web-->
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217361.41005933925!2d-106.44330369999999!3d31.6537765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75ecb3d0b329d%3A0xb196100549c7974!2sCiudad%20Ju%C3%A1rez%2C%20Chihuahua!5e0!3m2!1sen!2smx!4v1740414803612!5m2!1sen!2smx" width="600" height="425" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="pagina" id="Texto1">Video de youtube con etiqueta IFRAME</p>
+        <iframe id="video" width="600" height="425" src="https://www.youtube.com/embed/EBYsx1QWF9A" title="Rick and Morty x Run The Jewels: Oh Mama | Adult Swim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="hiper">
+        <a  id class="hiper" href=""><p class="pagina">Clic aquí</p></a>
+     </div>
+        <div class="cuadrado">
+            <p class="txtuno">
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin finibus augue sollicitudin; mauris lobortis in dolor lacus. Purus magnis efficitur commodo eget sit consequat adipiscing. Pharetra euismod turpis praesent pulvinar arcu lectus a himenaeos. Porta sollicitudin magna nibh sociosqu cursus a tristique. Ipsum sodales montes odio malesuada at bibendum ultrices. Vehicula tincidunt laoreet praesent sollicitudin facilisis. Elit vel vulputate et velit vel augue nisl nisl. Faucibus blandit bibendum nascetur bibendum ridiculus. Pharetra vehicula odio netus tortor mus sem purus porta nibh.
+     
+    Atempus purus felis eros; aenean vehicula porta. Amet efficitur etiam a eros cras, semper elementum. Class purus nostra odio dui quam himenaeos finibus enim gravida. Augue facilisis nostra efficitur convallis luctus parturient eu. Odio velit magnis porta himenaeos himenaeos netus nec? Justo elementum himenaeos id ultricies ut torquent sem venenatis.
+            </p>
+        </div>
+        <div class="footer">
+        <footer>
+            <p class="pagina">Creado por Daniel corp</p>
+        </footer>
+        <p class="pagina">Tabla</p>
+        <div id="tab">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>22</td>
+                        <td>México</td>
+                    </tr>
+                    <tr>
+                        <td>Valery</td>
+                        <td>22</td>
+                        <td>México</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <p class="pagina">Formulario</p>
+        <div class="forma">
+            <form action="/action_page.php">
+                <label>Nombres:</label>
+                <input type="text" placeholder="Escribe nombre..">
+        
+                <label>Apellidos:</label>
+                <input type="text" placeholder="Tu apellido..">
+        
+                <label>País</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="mx">México</option>
+                    <option value="usa">Estados Unidos</option>
+                </select>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <p class="pagina">Animaciones</p>
+        <div class="anim">
+            <h1>mover</h1>
+        </div>
+        <div class="anim2">
+            <h1>rotar</h1>
+        </div>
+        <div class="anim3">
+            <h1>escala</h1>
+        </div>
+        <a href="Pagina/index.html"><p class="pagina">HTML</p></a>
+
+        <p>Este es un <span style="color: cornsilk: font-weight: bold:">Texto importante</span></p>
+        <span class="mover">Me he movido con CSS</span> <!--sigue una linea-->
+        <span class="mover">Me he movido con CSS</span>
+        <span class="mover">Me he movido con CSS</span>
+        
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        
+        <button class="button">Pasame el mouse</button>
+
+            </body>
+</html>
